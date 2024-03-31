@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambo&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:wght@700&display=swap');
+:root{
+    --green: #33FF68;
+    --goldenrod:#DAA520;
+    --LightSeaGreen:#20B2AA;
+    --mediumblue: #0f4c5c;
+    --darkpink:#660A3F;/*5b0939*/
+    --pink:#EB0988;
+    --red:#FF0000;
+    --gold:#FFD700;
+    --chartreuse:#7FFF00;
+    --teal:#008080;
+    --lightred:#f94141;
+    --MediumSpringGreen:#00FA9A;
+    --darkgrey:#1b1717;
+    --lime:#32CD32;
+    --skyblue:#3a80e9;
+    --saddlebrown:#8B4513;
+    --white:#fff;
+    --grey:#3e3737;
+    --black:#0c0b0b;
+    --blackk:#000;
+    --hotpink:#FF69B4;
+    --deeppink:#FF1493;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    /* background-color: var(--black); */
+    color: var(--pink);
+    /* height: 200vh; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Inter', sans-serif;
+}
+
+/* select any text */
+::selection{
+    background-color: var(--mediumblue);
+    /* color: var(--blackk); */
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 0.7em;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--grey); 
+    border-radius: 3rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    /* background: #808080; */
+    background: var(--pink);
+  }
+
+  a{
+    color: var(--hotpink);
+    text-decoration: none;
+  }
+  
+.heading h1{
+  margin:0;
+  font-size:1.5rem
+}
+/* https://www.w3schools.blog/disable-drag-image-css */
+ img {     /* disable-drag-image */
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  }
+
+  /* Tabs style */
+  .grid-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin:1.5rem 2rem;
+}
+.list-table{
+  width:80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 1000px) {
+  .td-icon{
+  display: none;
+  }
+  .td-total-volume{
+    display: none;
+  }
+ }
+ @media only screen and (max-width: 1200px) {
+  .list-table{
+    width:95%;
+  }
+}
+
+  @media only screen and (max-width: 800px) {
+  .desktop-td-market{
+    display: none;
+  }
+  .mobile-td-market{
+    display:block;
+  }
+ }
+ 
+ /* coin.js file style */
+ .grey-wrapper{
+   background-color:var(--darkgrey);
+   margin:1.5rem auto;
+   border-radius:0.8rem;
+   display:block;
+   width: 90%;
+   padding:1rem 1rem;
+ }
+ .coin-days-flex{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin:1.5rem;
+ }
